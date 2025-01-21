@@ -9,9 +9,9 @@ const Soon = () => {
       <Counter />
 
       <div className='text-primary text-center flex flex-col gap-y-3'>
-        <div className='flex flex-col font-bold text-xl'>
-          <span>¡Inscripciones abiertas!</span>
-          <span>Inicio el 24 y 25 de Agosto</span>
+        <div className='flex flex-col font-bold text-3xl'>
+          <span>Apertura 2025</span>
+          <span>15 de Marzo</span>
         </div>
 
         {/* <span className=''>Aprocha los descuentos por anticipado</span> */}
@@ -20,11 +20,11 @@ const Soon = () => {
             to='/presentacion'
             className='underline'
           >
-            Mira la presentación del Torneo Clausura Yuka 2024 acá
+            Mira la presentación del torneo acá
           </Link>
         </span>
         <span>
-          Más info al{' '}
+          Más info{' '}
           <a
             href='https://wa.me/5491130171475'
             className='underline'

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ReactGA from 'react-ga4'
 import Layout from './layout/Layout'
-import Welcome from './pages/home'
+// import Welcome from './pages/home'
 import Tournaments from './pages/torneos'
 import Teams from './pages/equipos'
 import Series from './pages/series'
@@ -19,11 +19,13 @@ import Colaboradores from './pages/colaboradores'
 import Reglamento from './pages/reglamento'
 import Nosotros from './pages/nosotros'
 
+import Countdown from './pages/Countdown'
 import Presentacion from './pages/presentacion'
+// import Soon from './pages/soon'
 import PageNotFound from './pages/PageNotFound'
 
-import Weekend from './pages/weekend'
-import WeekendTournament from './pages/weekend/Tournament'
+// import Weekend from './pages/weekend'
+// import WeekendTournament from './pages/weekend/Tournament'
 
 import UsersLogin from './pages/users/Login'
 import UsersRegistro from './pages/users/Registro'
@@ -39,14 +41,14 @@ const App = () => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          {/* <Route
-            path='/'
-            element={<Presentacion />}
-          /> */}
           <Route
             path='/'
-            element={<Welcome />}
+            element={<Countdown />}
           />
+          {/* <Route
+            path='/'
+            element={<Welcome />}
+          /> */}
           <Route
             path='/torneos/:id'
             element={<Tournaments />}
@@ -136,14 +138,14 @@ const App = () => {
             path='/usuarios/restablecer-password'
             element={<UsersRestablecer />}
           />
-          <Route
+          {/* <Route
             path='/weekend'
             element={<Weekend />}
           />
           <Route
             path='/weekend/torneos/:id'
             element={<WeekendTournament />}
-          />
+          /> */}
 
           <Route
             path='*'

@@ -32,7 +32,7 @@ const ClubesRanking = () => {
     <section className='fade-in flex flex-col gap-y-3'>
       <Header
         title='Ranking de Clubes 2024'
-        emoji='🚀'
+        emoji='🥇'
       />
 
       <div className='overflow-x-auto text-sm'>

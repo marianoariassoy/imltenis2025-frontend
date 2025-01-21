@@ -10,6 +10,7 @@ const TournamentsCalendar = () => {
   const [filterText, setFilterText] = useState('')
 
   if (loading) return <Loader />
+  if (!data) return <div className='text-center'>No hay series por jugar 🥲</div>
 
   const handleFilterChange = event => {
     setFilterText(event.target.value)
@@ -35,14 +36,10 @@ const TournamentsCalendar = () => {
         className='input input-bordered w-full text-sm max-w-md mx-auto'
       />
 
-      {data.length > 0 ? (
-        <FixtureUpcoming data={filteredData} />
-      ) : (
-        <div className='text-center text-primary'>No hay próximas series</div>
-      )}
+      <FixtureUpcoming data={filteredData} />
 
       <Helmet>
-        <title>IML Tenis - Próximas Series</title>
+        <title>IML Tenis - Orden de juego</title>
       </Helmet>
     </section>
   )

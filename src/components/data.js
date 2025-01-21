@@ -1,18 +1,17 @@
 export const categories = [
-  { name: 'Damas Segunda', url: '/torneos/36' },
-  { name: 'Damas Tercera ', url: '/torneos/37' },
-  { name: 'Damas Cuarta ', url: '/torneos/38' },
-  { name: 'Primera Libre', url: '/torneos/40' },
-  { name: 'Segunda Libre', url: '/torneos/41' },
-  { name: 'Tercera Libre', url: '/torneos/42' },
-  { name: 'Cuarta Libre', url: '/torneos/43' },
-  { name: 'Quinta Libre', url: '/torneos/44' },
-  { name: 'Tercera +45', url: '/torneos/39' },
-  { name: 'Sub 14 Tennis Site', url: '/torneos/45' }
+  // { name: 'Damas Segunda', url: '/torneos/36' },
+  // { name: 'Damas Tercera ', url: '/torneos/37' },
+  // { name: 'Damas Cuarta ', url: '/torneos/38' },
+  // { name: 'Primera Libre', url: '/torneos/40' },
+  // { name: 'Segunda Libre', url: '/torneos/41' },
+  // { name: 'Tercera Libre', url: '/torneos/42' },
+  // { name: 'Cuarta Libre', url: '/torneos/43' },
+  // { name: 'Quinta Libre', url: '/torneos/44' },
+  // { name: 'Tercera +45', url: '/torneos/39' },
+  // { name: 'Sub 14 Tennis Site', url: '/torneos/45' }
 ]
 
 export const menu = [
-  // { name: 'Ranking Apertura 2024', url: '/ranking' },
   { name: 'Ranking Headshoes', url: '/rankings/jugadores' },
   { name: 'Ranking de Clubes', url: '/rankings/clubes' },
   { name: 'Ranking de Campeones', url: '/rankings/champions' },

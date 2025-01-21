@@ -1,16 +1,18 @@
 import { Helmet } from 'react-helmet'
+import Header from '../../components/Header'
 
 const Nosotros = () => {
   return (
     <section className='fade-in text-center max-w-2xl m-auto flex flex-col gap-y-6'>
-      <div className='text-xl'>
-        <h1 className='font-bold text-primary'>¡Hola!</h1>
-      </div>
+      <Header
+        title='¡Hola!'
+        emoji='👋'
+      />
 
       <div className='flex flex-col gap-y-6 text-sm px-6'>
         <div className='[&>span]:font-bold [&>span]:text-primary'>
           <span>Director:</span> Luis Armando Pujol <br />
-          <span>Coordinadores:</span> Emiliano Carro, Mariano Arias, Carmelo Grieco. <br />
+          <span>Coordinadores:</span> Mariano Arias, Emiliano Carro, Carmelo Grieco. <br />
           <span>RRSS:</span> Joaquina Yagua <br />
           <span>Sistemas: </span>
           <a

@@ -1,19 +1,18 @@
 import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router-dom'
 import Item from './Item'
-import Counter from '../Counter'
+import Header from '../../components/Header'
 
 const Presentacion = () => {
   const data = [
     {
       title: '🤔 ¿Qué necesito para realizar la inscripción?',
-      text: `Para inscribirte necesitás leer la información completa de cómo se lleva adelante el torneo y armar tu equipo con un mínimo de 6 participantes en la lista de buena fe y un máximo de 18 jugadores. Tener o alquilar 3 canchas de Tenis de la misma superficie para poder hacer de local, aceptamos clubes con 2 canchas.`
+      text: `Para inscribirte necesitás leer la información completa de cómo se lleva adelante el torneo y armar tu equipo con un mínimo de 6 participantes en la lista de buena fe y un máximo de 18 jugadores. Tener o alquilar 3 canchas de tenis de la misma superficie para poder hacer de local, aceptamos clubes con 2 canchas.`
     },
     {
       title: '📅 Fechas',
-      text: `Inicio del torneo: <strong>Sábado 24 y Domingo 25 de Agosto.</strong><br />
-Cierre de Inscripción: <strong>11 de Agosto.</strong><br />
-Cierre de listas de buena fe: <strong>18 de Agosto.</strong>`
+      text: `Inicio del torneo: <strong>Sábado 15 y Domingo 16 de Marzo.</strong><br />
+Cierre de Inscripción: <strong>8 de Marzo.</strong>`
     },
     {
       title: '🏆 ¿Cómo es el formato de juego y del torneo?',
@@ -23,9 +22,9 @@ Cierre de listas de buena fe: <strong>18 de Agosto.</strong>`
     },
     {
       title: '⭐ ¿En qué categorías puedo inscribirme?',
-      text: `<strong>Los Domingos:</strong> Primera Libre, Segunda Libre, Tercera Libre, Cuarta Libre, Quinta Libre. <br/> 
+      text: `<strong>Los Domingos:</strong> Primera Libre, Segunda Libre, Tercera Libre, Cuarta Libre, Quinta Libre, Sexta Libre (con admisión). <br/> 
       <strong>Sábados y Domingos:</strong> Damas Segunda, Damas Tercera, Damas Cuarta. <br/> 
-      <strong>Sábados:</strong> Segunda +35, Tercera +45. 
+      <strong>Sábados:</strong> Mixto Libre, Segunda +35, Tercera +35. 
       `
     },
     {
@@ -36,7 +35,7 @@ Cierre de listas de buena fe: <strong>18 de Agosto.</strong>`
     },
     {
       title: '🔞 ¿Hay restricciones por edad?',
-      text: `Solamente en la categoría Segunda y Tercera +45, el resto de las categorías son libres de edad.`
+      text: `Solamente en la categoría Segunda y Tercera +35, el resto de las categorías son libres de edad.`
     },
     {
       title: '🌍 ¿Dónde se juega?',
@@ -45,28 +44,28 @@ Cierre de listas de buena fe: <strong>18 de Agosto.</strong>`
     },
     {
       title: '🕛 ¿Qué día y horario se juega por categoría?',
-      text: `Las categorías de los Domingos de <strong>9 a 18 hs.</strong><br/>Las categorías de los Sábados de <strong>13 a 18 hs.</strong> <br/><br/>
+      text: `Las categorías de los Domingos de <strong>9 a 17 hs.</strong><br/>Las categorías de los Sábados de <strong>13 a 17 hs.</strong> <br/><br/>
       Cada equipo puede elegir el horario cuando actúa de local. En caso de que una institución presente más de un equipo, la organización lo tendrá presente a la hora de las programaciones para no superponer horarios.`
     },
     {
       title: '🤔 ¿Hay un mínimo de encuentros o series a disputar?',
-      text: `No podemos saber con exactitud cuantas series se disputarán por categoría pero garantizamos un minimo de 6 series por equipo.`
+      text: `No podemos saber con exactitud cuantas series se disputarán por categoría pero garantizamos un mínimo de 6 series por equipo.`
     },
     {
       title: '🎾 Pelotas',
       text: `Las pelotas serán responsabilidad del <strong >equipo local</strong>, deben ser nuevas o con un solo uso reciente, puediendo ser sueltas o de tubo presurizado.`
     },
-    {
-      title: '💵 ¿Cuál es el valor y como abonar la inscripción por cada equipo?',
-      text: `
-      <strong>Durante el mes de Julio $99.000.- </strong><br/>
-      <strong>Desde Agosto $130.000.- </strong><br/> <br/>
-      Alias: imltenis2023<br/>
-      Mariano Arias
-      <br/><br/>
-      Enviar comprobante al área administrativa +54 9 11 3017-1475 <br/>
-      ¡Reserva ahora! y consulta descuentos por cantidad de equipos.`
-    },
+    // {
+    //   title: '💵 ¿Cuál es el valor y como abonar la inscripción por cada equipo?',
+    //   text: `
+    //   <strong>Durante el mes de Julio $99.000.- </strong><br/>
+    //   <strong>Desde Agosto $130.000.- </strong><br/> <br/>
+    //   Alias: imltenis2023<br/>
+    //   Mariano Arias
+    //   <br/><br/>
+    //   Enviar comprobante al área administrativa +54 9 11 3017-1475 <br/>
+    //   ¡Reserva ahora! y consulta descuentos por cantidad de equipos.`
+    // },
     {
       title: '💵 ¿Cuál es el valor a abonar cada partido?',
       text: `El costo a abonar cada jugador en conceptos de alquiler de canchas al club local será definido antes del comienzo del torneo.`
@@ -78,9 +77,10 @@ Cierre de listas de buena fe: <strong>18 de Agosto.</strong>`
   ]
   return (
     <section className='fade-in flex flex-col gap-y-6 max-w-2xl m-auto'>
-      <div className='flex flex-col items-center gap-y-6'>
-        <Counter />
-      </div>
+      <Header
+        title='¡Hola Apertura 2025!'
+        emoji='👋'
+      />
 
       <div className='aspect-square lg:aspect-video'>
         <img
@@ -91,22 +91,22 @@ Cierre de listas de buena fe: <strong>18 de Agosto.</strong>`
 
       <article className='text-sm flex flex-col gap-y-3'>
         <p>
-          Comienza un nuevo torneo y vas a poder formar parte de una de las
-          <span className='text-primary'> ligas de clubes</span> más importante de la zona. <br />
+          Comienza el tenis en este 2025 y vas a poder formar parte de uno de los
+          <span className='text-primary'> interclubes más importantes</span> de la zona. <br />
           Participá junto a tu grupo de amigos representando a tu club o barrio, jugando en tus canchas y también
-          conociendo otros lugares y jugadores cada semana, siempre con los
+          conociendo otros lugares y jugadores cada semana, siempre con
           <span className='text-primary'> resultados y rankings actualizados</span> en nuestro sitio web.
         </p>
         <p>
           No te pierdas la oportunidad de poder ser elegido el
           <span className='text-primary'> jugador destacado de la fecha</span> o recibir importantes premios al final de
-          la temporada siendo el mejor del <span className='text-primary'> ranking de jugadores</span> y también ayudar
-          a tu club a ganar la competencia anual de clubes en el
+          la temporada liderando el <span className='text-primary'> ranking de jugadores</span> y también ayudar a tu
+          club a ganar la competencia anual de clubes en el
           <span className='text-primary'> ranking de clubes.</span>
         </p>
         <p>
-          Como si fuera poco, sobre todas las cosas, queremos mucho a nuestra comunidad y también tenemos momentos de
-          entretenimiento en nuestras redes sociales, como
+          Como si fuera poco, sobre todas las cosas, queremos mucho a nuestra comunidad tenistica y también tenemos
+          momentos de entretenimiento, como
           <span className='text-primary'> la batalla de los clubes</span>,
           <span className='text-primary'> la elección de los mejores capitanes</span> y los nuevos
           <span className='text-primary'> IML Awards.</span>
@@ -135,7 +135,7 @@ Cierre de listas de buena fe: <strong>18 de Agosto.</strong>`
         </NavLink>
       </div>
       <div className='text-primary'>
-        Si tenes dudas contactactate por WhatsApp al{' '}
+        Contactate con nostros al WhatsApp{' '}
         <a
           href='https://wa.me/5491130171475'
           className='hover:underline'

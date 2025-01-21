@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import Item from './Item'
 import Buscar from './Buscar'
+import Header from '../../components/Header'
 
 const Reglamento = () => {
   const [filterText, setFilterText] = useState(null)
@@ -228,11 +229,13 @@ const Reglamento = () => {
 
   return (
     <section className='fade-in flex flex-col gap-y-6'>
-      <div className='text-center text-[1.15rem] lg:text-xl'>
-        <h1 className='font-bold text-primary'>Reglamento IML Tenis</h1>
-        <h2 className='font-bold text-primary'>Clausura 2024</h2>
-        <span className='block opacity-70 text-sm mt-3'>Ultima actualización 4 de Noviembre 2024.</span>
-      </div>
+      <Header
+        title='Reglamento IML Tenis'
+        emoji='📝'
+      />
+
+      <span className='block opacity-70 text-sm text-center'>Ultima actualización 4 de Noviembre 2024.</span>
+
       <div>
         <Buscar
           filterText={filterText}

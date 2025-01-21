@@ -36,8 +36,7 @@ const Champions = () => {
     <section className='fade-in flex flex-col gap-y-3'>
       <Header
         title='Ranking de Campeones'
-        description=''
-        emoji='🏅'
+        emoji='👑'
       />
 
       <div className='overflow-x-auto text-sm'>

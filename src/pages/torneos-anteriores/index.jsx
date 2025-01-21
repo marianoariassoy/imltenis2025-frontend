@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-
 import useFetch from '../../hooks/useFetch'
 import Loader from '../../components/Loader'
+import Header from '../../components/Header'
 
 const Torneos = () => {
   const { data, loading } = useFetch(`/tournaments`)
@@ -11,15 +11,15 @@ const Torneos = () => {
 
   return (
     <section className='fade-in flex flex-col gap-y-6'>
-      <div className='text-center text-primary text-[1.15rem] lg:text-xl'>
-        <h1 className='font-bold'>Torneos Anteriores</h1>
-        👴
-      </div>
+      <Header
+        title='Torneos Anteriores'
+        emoji='👴'
+      />
 
-      <div className='flex flex-col gap-y-1 items-center font-medium'>
+      <section className='flex flex-col gap-y-1 items-center font-medium'>
         {data &&
           data
-            .filter(item => item.season !== 4)
+            .filter(item => item.season !== 5)
             .map(item => (
               <Link
                 key={item.id}
@@ -29,7 +29,7 @@ const Torneos = () => {
                 <span>{item.name}</span> {item.season_name}
               </Link>
             ))}
-      </div>
+      </section>
 
       <Helmet>
         <title>IML Tenis Torneos Anteriores</title>
