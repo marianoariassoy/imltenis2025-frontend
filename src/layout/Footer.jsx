@@ -69,21 +69,23 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className='text-sm text-center flex flex-col opacity-60'>
-        <span className='font-bold'>Liga de clubes IML Tenis</span>
-        <span>Buenos Aires, Argentina. &copy; {year}</span>
-
-        <div className='flex items-center justify-center gap-x-2'>
-          <span className='flex items-center gap-x-2'>
-            <WhatsApp />
+      <div className='text-sm text-center flex flex-col justify-center items-center text-secondary'>
+        <div>
+          <span className='font-bold'>Liga de clubes IML Tenis</span>
+        </div>
+        <div className='flex gap-x-1 items-center flex-wrap justify-center'>
+          <span>Buenos Aires, Argentina. &copy; {year}</span>
+          <span>-</span>
+          <span>
             <a
               href='https://wa.me/5491130171475'
-              className='hover:underline'
+              className='hover:underline flex items-center gap-x-2'
             >
-              11 3017 1475
+              <WhatsApp />
+              <span>11 3017 1475</span>
             </a>
           </span>
-          <span>&bull;</span>
+          <span>-</span>
           <span>
             <a
               href='mailto:hola@imltenis.com.ar'
@@ -95,7 +97,6 @@ const Footer = () => {
             </a>
           </span>
         </div>
-        <span></span>
       </div>
     </div>
   )

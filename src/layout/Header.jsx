@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Bars, Logo } from '../components/icons'
-import UserMenu from './UserMenu'
+import { Bars, Logo, Instagram } from '../components/icons'
 
 const Header = () => {
   const openMenu = () => {
@@ -27,7 +26,7 @@ const Header = () => {
       <div className='navbar-start'>
         <div className='dropdown'>
           <label
-            className='cursor-pointer hover:text-primary'
+            className='cursor-pointer hover:text-primary text-secondary'
             onClick={openMenu}
           >
             <Bars />
@@ -39,8 +38,15 @@ const Header = () => {
           <Logo />
         </Link>
       </div>
-      <div className='navbar-end'>
-        <UserMenu />
+      <div className='navbar-end text-secondary'>
+        <a
+          href='https://www.instagram.com/imltenis/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='hover:text-primary'
+        >
+          <Instagram />
+        </a>
       </div>
     </div>
   )

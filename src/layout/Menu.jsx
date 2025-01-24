@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { menu, categories } from '../components/data'
-const NavBar = () => {
+
+const Menu = () => {
   const openMenu = () => {
     const menu = document.querySelector('nav')
     menu.classList.toggle('hidden')
@@ -40,4 +41,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Menu

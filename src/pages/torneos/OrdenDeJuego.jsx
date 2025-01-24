@@ -5,12 +5,12 @@ import Loader from '../../components/Loader'
 import FixtureUpcoming from './FixtureUpcoming'
 import Header from '../../components/Header'
 
-const TournamentsCalendar = () => {
+const OrdenDeJuego = () => {
   const { data, loading } = useFetch(`/series/upcoming`)
   const [filterText, setFilterText] = useState('')
 
   if (loading) return <Loader />
-  if (!data) return <div className='text-center'>No hay series por jugar 🥲</div>
+  if (!data) return <div className='text-center text-sm text-primary mt-8'>No hay series por jugar 🥲</div>
 
   const handleFilterChange = event => {
     setFilterText(event.target.value)
@@ -45,4 +45,4 @@ const TournamentsCalendar = () => {
   )
 }
 
-export default TournamentsCalendar
+export default OrdenDeJuego

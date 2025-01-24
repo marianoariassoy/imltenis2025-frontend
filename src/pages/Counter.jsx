@@ -30,30 +30,30 @@ const Counter2 = () => {
     return { days, hours, minutes, seconds }
   }
   return (
-    <div className='grid grid-flow-col  text-center auto-cols-max text-sm'>
-      <div className='flex flex-col p-2 bg-neutral rounded-box text-primary'>
-        <span className='countdown font-mono text-4xl'>
+    <div className='grid grid-flow-col text-center auto-cols-max text-sm'>
+      <div className='flex flex-col p-2 text-primary'>
+        <span className='countdown font-bold text-3xl'>
           <span style={{ '--value': timeRemaining.days }}></span>
         </span>
         días
       </div>
-      <div className='flex flex-col p-2 bg-neutral rounded-box text-primary'>
-        <span className='countdown font-mono text-4xl'>
+      <div className='flex flex-col p-2 text-primary'>
+        <span className='countdown font-bold text-3xl'>
           <span style={{ '--value': timeRemaining.hours }}></span>
         </span>
         horas
       </div>
-      <div className='flex flex-col p-2 bg-neutral rounded-box text-primary'>
-        <span className='countdown font-mono text-4xl'>
+      <div className='flex flex-col p-2 text-primary'>
+        <span className='countdown font-bold text-3xl'>
           <span style={{ '--value': timeRemaining.minutes }}></span>
         </span>
-        min
+        min.
       </div>
-      <div className='flex flex-col p-2 bg-neutral rounded-box text-primary'>
-        <span className='countdown font-mono text-4xl'>
+      <div className='flex flex-col p-2 text-primary'>
+        <span className='countdown font-bold text-3xl'>
           <span style={{ '--value': timeRemaining.seconds }}></span>
         </span>
-        seg
+        seg.
       </div>
     </div>
   )

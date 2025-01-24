@@ -13,7 +13,7 @@ const JugadoresRanking = () => {
   const [filter, setFilter] = useState(9)
 
   if (loading) return <Loader />
-  console.log(data)
+
   const filteredPlayers = data.filter(player => +player.tournament_category === filter || filter === 'all')
 
   const labels = [

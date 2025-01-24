@@ -12,12 +12,13 @@ export const categories = [
 ]
 
 export const menu = [
-  { name: 'Ranking Headshoes', url: '/rankings/jugadores' },
-  { name: 'Ranking de Clubes', url: '/rankings/clubes' },
-  { name: 'Ranking de Campeones', url: '/rankings/champions' },
-  { name: 'Orden de juego', url: '/calendario' },
-  { name: 'Jugadores', url: '/jugadores' },
   { name: 'Torneos Anteriores', url: '/torneos-anteriores' },
+
+  { name: 'Ranking Jugadores', url: '/ranking/jugadores' },
+  { name: 'Ranking de Clubes', url: '/ranking/clubes' },
+  { name: 'Ranking de Campeones', url: '/ranking/campeones' },
+  { name: 'Orden de juego', url: '/orden-de-juego' },
+  { name: 'Jugadores', url: '/jugadores' },
   { name: 'Reglamento', url: '/reglamento' },
   { name: 'Colaboradores', url: '/colaboradores' },
   // { name: 'IML Weekend', url: '/weekend' },
@@ -86,46 +87,3 @@ export const years = []
 for (let i = 1930; i <= 2020; i++) {
   years.push(i)
 }
-
-export const products = [
-  {
-    id: 1,
-    title: 'Mate',
-    image:
-      'https://images.pexels.com/photos/28098015/pexels-photo-28098015/free-photo-of-ciudad-restaurante-acera-relajante.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-    price: 10000,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    id: 2,
-    title: 'Gorrito Bennie',
-    image:
-      'https://images.pexels.com/photos/28098015/pexels-photo-28098015/free-photo-of-ciudad-restaurante-acera-relajante.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-    price: 7000,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    id: 3,
-    title: 'Gorra Champions',
-    image:
-      'https://images.pexels.com/photos/28098015/pexels-photo-28098015/free-photo-of-ciudad-restaurante-acera-relajante.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-    price: 7000,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    id: 4,
-    title: 'Gorra',
-    image:
-      'https://images.pexels.com/photos/28098015/pexels-photo-28098015/free-photo-of-ciudad-restaurante-acera-relajante.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-    price: 7000,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    id: 4,
-    title: 'Piluso',
-    image:
-      'https://images.pexels.com/photos/28098015/pexels-photo-28098015/free-photo-of-ciudad-restaurante-acera-relajante.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-    price: 7000,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  }
-]

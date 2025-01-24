@@ -16,7 +16,7 @@ const Torneos = () => {
         emoji='👴'
       />
 
-      <section className='flex flex-col gap-y-1 items-center font-medium'>
+      <section className='flex flex-col gap-y-1 items-center font-medium text-sm'>
         {data &&
           data
             .filter(item => item.season !== 5)

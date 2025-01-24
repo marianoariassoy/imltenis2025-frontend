@@ -5,13 +5,13 @@ import Layout from './layout/Layout'
 import Tournaments from './pages/torneos'
 import Teams from './pages/equipos'
 import Series from './pages/series'
-import SeriesUpcoming from './pages/torneos/SeriesUpcoming'
+import OrdenDeJuego from './pages/torneos/OrdenDeJuego'
 import Clubes from './pages/clubes'
 import JugadoresProfile from './pages/jugadores/Perfil'
 
 import RankingJugadores from './pages/rankings/Jugadores'
 import RankingClubes from './pages/rankings/Clubes'
-import RankingChampions from './pages/rankings/Champions'
+import RankingCampeones from './pages/rankings/Campeones'
 
 import Jugadores from './pages/jugadores'
 import TorneosAnteriores from './pages/torneos-anteriores'
@@ -19,20 +19,12 @@ import Colaboradores from './pages/colaboradores'
 import Reglamento from './pages/reglamento'
 import Nosotros from './pages/nosotros'
 
-import Countdown from './pages/Countdown'
 import Presentacion from './pages/presentacion'
 // import Soon from './pages/soon'
 import PageNotFound from './pages/PageNotFound'
 
 // import Weekend from './pages/weekend'
 // import WeekendTournament from './pages/weekend/Tournament'
-
-import UsersLogin from './pages/users/Login'
-import UsersRegistro from './pages/users/Registro'
-import UsersPerfil from './pages/users/Perfil'
-import UsersMisDatos from './pages/users/MisDatos'
-import UsersRecuperar from './pages/users/RecuperarPassword'
-import UsersRestablecer from './pages/users/RestablecerPassword'
 
 const App = () => {
   ReactGA.initialize('G-G1DBH0K86R')
@@ -43,7 +35,7 @@ const App = () => {
         <Routes>
           <Route
             path='/'
-            element={<Countdown />}
+            element={<Presentacion />}
           />
           {/* <Route
             path='/'
@@ -58,7 +50,6 @@ const App = () => {
             path='/clubes/:id'
             element={<Clubes />}
           />
-
           <Route
             path='/equipos/:id'
             element={<Teams />}
@@ -72,26 +63,28 @@ const App = () => {
             element={<Series />}
           />
           <Route
-            path='/calendario'
-            element={<SeriesUpcoming />}
+            path='/orden-de-juego'
+            element={<OrdenDeJuego />}
           />
 
           <Route
-            path='/rankings/jugadores'
+            path='/ranking/jugadores'
             element={<RankingJugadores />}
           />
           <Route
-            path='/rankings/clubes'
+            path='/ranking/clubes'
             element={<RankingClubes />}
           />
           <Route
-            path='/rankings/champions'
-            element={<RankingChampions />}
+            path='/ranking/campeones'
+            element={<RankingCampeones />}
           />
+
           <Route
             path='/torneos-anteriores'
             element={<TorneosAnteriores />}
           />
+
           <Route
             path='/jugadores'
             element={<Jugadores />}
@@ -104,7 +97,6 @@ const App = () => {
             path='/reglamento'
             element={<Reglamento />}
           />
-
           <Route
             path='/nosotros'
             element={<Nosotros />}
@@ -114,30 +106,6 @@ const App = () => {
             element={<Presentacion />}
           />
 
-          <Route
-            path='/usuarios/login'
-            element={<UsersLogin />}
-          />
-          <Route
-            path='/usuarios/registro'
-            element={<UsersRegistro />}
-          />
-          <Route
-            path='/usuarios/perfil'
-            element={<UsersPerfil />}
-          />
-          <Route
-            path='/usuarios/misdatos'
-            element={<UsersMisDatos />}
-          />
-          <Route
-            path='/usuarios/recuperar-password'
-            element={<UsersRecuperar />}
-          />
-          <Route
-            path='/usuarios/restablecer-password'
-            element={<UsersRestablecer />}
-          />
           {/* <Route
             path='/weekend'
             element={<Weekend />}

@@ -1,13 +1,13 @@
 import Header from './Header'
 import Footer from './Footer'
-import NavBar from './NavBar'
+import Menu from './Menu'
 
 const Layout = ({ children }) => {
   return (
     <>
       <header className='sticky top-0 z-50 mb-3'>
         <Header />
-        <NavBar />
+        <Menu />
       </header>
       <main className='mx-auto px-5 max-w-4xl w-screen'>{children}</main>
       <footer>

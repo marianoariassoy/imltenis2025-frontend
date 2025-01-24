@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router-dom'
 import Item from './Item'
-import Header from '../../components/Header'
+import Counter from '../Counter'
 
 const Presentacion = () => {
   const data = [
@@ -16,7 +16,7 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
     },
     {
       title: '🏆 ¿Cómo es el formato de juego y del torneo?',
-      text: `En todas las categorías se jugarán <strong >1 single y 2 dobles.</strong><br/>
+      text: `En todas las categorías con exepción de las categorías Mixtas se disputarán <strong >1 single y 2 dobles.</strong> En las categorías Mixtas se disputarán 2 dobles.<br/>
       Todos los partidos se disputarán al mejor de 3 sets, con tie break. El tercer set será Super Tie break a 10 puntos con diferencia de dos.<br/>
       Todos los resultados y el reglamento general podrán ser vistos en este sitio web.`
     },
@@ -24,8 +24,7 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
       title: '⭐ ¿En qué categorías puedo inscribirme?',
       text: `<strong>Los Domingos:</strong> Primera Libre, Segunda Libre, Tercera Libre, Cuarta Libre, Quinta Libre, Sexta Libre (con admisión). <br/> 
       <strong>Sábados y Domingos:</strong> Damas Segunda, Damas Tercera, Damas Cuarta. <br/> 
-      <strong>Sábados:</strong> Mixto Libre, Segunda +35, Tercera +35. 
-      `
+      <strong>Sábados:</strong> Mixto Libre, Mixto 3ra/4ta, Caballeros Segunda +35, Caballeros Tercera +35.`
     },
     {
       title: '📈 ¿Cómo se a que categoría corresponde mi equipo?',
@@ -45,27 +44,29 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
     {
       title: '🕛 ¿Qué día y horario se juega por categoría?',
       text: `Las categorías de los Domingos de <strong>9 a 17 hs.</strong><br/>Las categorías de los Sábados de <strong>13 a 17 hs.</strong> <br/><br/>
-      Cada equipo puede elegir el horario cuando actúa de local. En caso de que una institución presente más de un equipo, la organización lo tendrá presente a la hora de las programaciones para no superponer horarios.`
+      Cada equipo puede elegir el horario cuando actúa de local.`
     },
     {
       title: '🤔 ¿Hay un mínimo de encuentros o series a disputar?',
-      text: `No podemos saber con exactitud cuantas series se disputarán por categoría pero garantizamos un mínimo de 6 series por equipo.`
+      text: `No podemos saber con exactitud cuantas series se disputarán por categoría pero garantizamos 8 series por equipo.`
     },
     {
       title: '🎾 Pelotas',
       text: `Las pelotas serán responsabilidad del <strong >equipo local</strong>, deben ser nuevas o con un solo uso reciente, puediendo ser sueltas o de tubo presurizado.`
     },
-    // {
-    //   title: '💵 ¿Cuál es el valor y como abonar la inscripción por cada equipo?',
-    //   text: `
-    //   <strong>Durante el mes de Julio $99.000.- </strong><br/>
-    //   <strong>Desde Agosto $130.000.- </strong><br/> <br/>
-    //   Alias: imltenis2023<br/>
-    //   Mariano Arias
-    //   <br/><br/>
-    //   Enviar comprobante al área administrativa +54 9 11 3017-1475 <br/>
-    //   ¡Reserva ahora! y consulta descuentos por cantidad de equipos.`
-    // },
+    {
+      title: '💵 ¿Cuál es el valor y como abonar la inscripción por cada equipo?',
+      text: `
+      <strong>Hasta el 15 de Febrero $150.000.- </strong><br/>
+      <strong>Hasta el 15 de Marzo $180.000.- </strong><br/>
+      Las categorías Mixtas y Caballeros Segunda +35 tienen un descuento del 50% en la inscripción. 
+      <br/> <br/>
+      Alias: imltenis.2024<br/>
+      Emiliano Carro
+      <br/><br/>
+      Enviar comprobante al área administrativa +54 9 11 3017-1475 <br/>
+      Consulta descuentos por cantidad de equipos.`
+    },
     {
       title: '💵 ¿Cuál es el valor a abonar cada partido?',
       text: `El costo a abonar cada jugador en conceptos de alquiler de canchas al club local será definido antes del comienzo del torneo.`
@@ -75,26 +76,27 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
       text: `Cada equipo deberá tener un capitán responsable, quien será el encargado de realizar la inscripción y de enviar la lista de buena fe de su equipo hasta la fecha indicada. `
     }
   ]
+
   return (
     <section className='fade-in flex flex-col gap-y-6 max-w-2xl m-auto'>
-      <Header
-        title='¡Hola Apertura 2025!'
-        emoji='👋'
-      />
+      <div className='flex justify-center -mb-2'>
+        <Counter />
+      </div>
 
       <div className='aspect-square lg:aspect-video'>
         <img
           className='w-full h-full object-cover'
-          src='https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTczeWgwYXZjcDhyZ2s3ZzZwd24yMzNlamdlN2Q1emwya2s1c3UzZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J4JR8nlwPgXcuKRBoG/giphy-downsized-large.gif'
+          src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZ1aTlzNmJ3djc1ZmI0azk1dXVobDUyZWN0cWJnMXVoY2lsZGptYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q7clnnDgsFH3APTQwL/giphy.gif'
         />
       </div>
 
       <article className='text-sm flex flex-col gap-y-3'>
         <p>
-          Comienza el tenis en este 2025 y vas a poder formar parte de uno de los
-          <span className='text-primary'> interclubes más importantes</span> de la zona. <br />
-          Participá junto a tu grupo de amigos representando a tu club o barrio, jugando en tus canchas y también
-          conociendo otros lugares y jugadores cada semana, siempre con
+          Llega el <span className='text-primary font-bold'>Torneo Apertura 2025</span> y vas a poder formar parte de
+          uno de los
+          <span className='text-primary'> interclubes más importantes</span> de la zona. Participá junto a tu grupo de
+          amigos representando a tu club o barrio, jugando en tus canchas y también conociendo otros lugares y jugadores
+          cada semana, siempre con
           <span className='text-primary'> resultados y rankings actualizados</span> en nuestro sitio web.
         </p>
         <p>
@@ -134,8 +136,8 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
           enlace
         </NavLink>
       </div>
-      <div className='text-primary'>
-        Contactate con nostros al WhatsApp{' '}
+      <div className='text-primary text-sm'>
+        Inscribite o consultanos al WhatsApp{' '}
         <a
           href='https://wa.me/5491130171475'
           className='hover:underline'
@@ -154,7 +156,7 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
       </div>
 
       <Helmet>
-        <title>IML Tenis Bienvenido</title>
+        <title>IML Tenis Presentación</title>
       </Helmet>
     </section>
   )
