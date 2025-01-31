@@ -5,11 +5,11 @@ import Menu from './Menu'
 const Layout = ({ children }) => {
   return (
     <>
-      <header className='sticky top-0 z-50 mb-3'>
+      <header className='sticky top-0 z-50'>
         <Header />
         <Menu />
       </header>
-      <main className='mx-auto px-5 max-w-4xl w-screen'>{children}</main>
+      <main className='mx-auto px-4 max-w-4xl w-screen'>{children}</main>
       <footer>
         <Footer />
       </footer>

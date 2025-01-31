@@ -1,19 +1,20 @@
 export const categories = [
-  // { name: 'Damas Segunda', url: '/torneos/36' },
-  // { name: 'Damas Tercera ', url: '/torneos/37' },
-  // { name: 'Damas Cuarta ', url: '/torneos/38' },
-  // { name: 'Primera Libre', url: '/torneos/40' },
-  // { name: 'Segunda Libre', url: '/torneos/41' },
-  // { name: 'Tercera Libre', url: '/torneos/42' },
-  // { name: 'Cuarta Libre', url: '/torneos/43' },
-  // { name: 'Quinta Libre', url: '/torneos/44' },
-  // { name: 'Tercera +45', url: '/torneos/39' },
-  // { name: 'Sub 14 Tennis Site', url: '/torneos/45' }
+  { name: 'Damas Segunda', url: '/soon' },
+  { name: 'Damas Tercera ', url: '/soon' },
+  { name: 'Damas Cuarta ', url: '/soon' },
+  { name: 'Primera Libre', url: '/soon' },
+  { name: 'Segunda Libre', url: '/soon' },
+  { name: 'Tercera Libre', url: '/soon' },
+  { name: 'Cuarta Libre', url: '/soon' },
+  { name: 'Quinta Libre', url: '/soon' },
+  { name: 'Sexta Libre', url: '/soon' },
+  { name: 'Segunda +35', url: '/soon' },
+  { name: 'Tercera +35', url: '/soon' },
+  { name: 'Sub 14 Juniors', url: '/soon' }
 ]
 
 export const menu = [
   { name: 'Torneos Anteriores', url: '/torneos-anteriores' },
-
   { name: 'Ranking Jugadores', url: '/ranking/jugadores' },
   { name: 'Ranking de Clubes', url: '/ranking/clubes' },
   { name: 'Ranking de Campeones', url: '/ranking/campeones' },

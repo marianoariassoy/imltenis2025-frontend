@@ -80,14 +80,14 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
   return (
     <section className='fade-in flex flex-col gap-y-6 max-w-2xl m-auto'>
       <div className='flex flex-col items-center -mb-2'>
-        <div className='text-3xl text-center animate-bounce'>🚀</div>
+        <div className='text-3xl text-center'>🏆</div>
         <Counter />
       </div>
 
       <div className='aspect-square lg:aspect-video'>
         <img
           className='w-full h-full object-cover'
-          src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZ1aTlzNmJ3djc1ZmI0azk1dXVobDUyZWN0cWJnMXVoY2lsZGptYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q7clnnDgsFH3APTQwL/giphy.gif'
+          src='https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjZub2JldzIxdHllajVodzlzd3gycjY0cDAxeTdnazFnamJndjgzayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kaYlcLV0XifKZFfwUm/giphy.gif'
         />
       </div>
 
@@ -138,21 +138,21 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
         </NavLink>
       </div>
       <div className='text-primary text-sm'>
-        Inscribite o consultanos al WhatsApp{' '}
+        Inscribite o consultanos al <span className='font-semibold'>WhatsApp</span>{' '}
         <a
           href='https://wa.me/5491130171475'
-          className='hover:underline'
+          className='hover:underline font-semibold'
           target='_blank'
         >
           +54 9 11 3017-1475
         </a>
       </div>
-      <div className='text-primary font-bold text-sm'>¡Nos vemos en la cancha! 😉</div>
+      <div className='text-primary font-semibold text-sm'>¡Nos vemos en la cancha! 😉</div>
 
       <div className='aspect-square lg:aspect-video overflow-hidden'>
         <img
           className='w-full h-full object-cover block'
-          src='https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmQwd2NuY3pobDdlcDI2OGRyZHRxem5hNHFhaG1samN3ZHFuZjVreiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1cmAN17b0KFJ6/giphy.gif'
+          src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGx5MXNua2M1Nm1od2IzdDR2aWVteDVvaWswOXRscjJ6dG9pdnY5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Z24C2dyo2XpkWKJQqG/giphy.gif'
         />
       </div>
 
