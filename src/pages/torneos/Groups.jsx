@@ -2,7 +2,7 @@ import useFetch from '../../hooks/useFetch'
 import Loader from '../../components/Loader'
 import Labels from '../../components/Labels'
 import TitleRow from '../../components/TitleRow'
-import { Bull } from '../../components/icons'
+import { Bull } from '../../lib/icons'
 
 const TournamentsGroup = ({ group }) => {
   const { data, loading } = useFetch(`/${group.type == 3 ? 'groups-stage2' : 'groups'}/teams/${group.id}`)

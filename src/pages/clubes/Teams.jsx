@@ -32,8 +32,8 @@ const ClubesTeams = ({ id }) => {
   ]
 
   return (
-    <section className='fade-in flex flex-col gap-y-6'>
-      <h1 className='text-center text-primary font-bold italic lg:text-xl'>Equipos</h1>
+    <section className='fade-in flex flex-col gap-y-3'>
+      <h1 className='text-center text-primary font-bold'>Equipos</h1>
 
       <div className='overflow-x-auto text-sm'>
         <table className='table w-full'>
@@ -50,7 +50,7 @@ const ClubesTeams = ({ id }) => {
                 <td>
                   <Link
                     to={`/equipos/${item.id}`}
-                    className='link-hover text-primary font-bold'
+                    className='link-hover text-primary font-medium'
                   >
                     {item.name}
                   </Link>
@@ -58,7 +58,7 @@ const ClubesTeams = ({ id }) => {
                 <td>
                   <Link
                     to={`/torneos/${item.tournament_id}`}
-                    className='hover:text-primary font-bold'
+                    className='hover:text-primary'
                   >
                     {item.tournament_name}
                   </Link>

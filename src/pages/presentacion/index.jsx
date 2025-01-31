@@ -79,7 +79,8 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
 
   return (
     <section className='fade-in flex flex-col gap-y-6 max-w-2xl m-auto'>
-      <div className='flex justify-center -mb-2'>
+      <div className='flex flex-col items-center -mb-2'>
+        <div className='text-3xl text-center animate-bounce'>🚀</div>
         <Counter />
       </div>
 

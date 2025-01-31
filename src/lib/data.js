@@ -23,7 +23,6 @@ export const menu = [
   { name: 'Colaboradores', url: '/colaboradores' },
   // { name: 'IML Weekend', url: '/weekend' },
   { name: 'Nosotros', url: '/nosotros' }
-  // { name: 'Login', url: '/usuarios/login' }
 ]
 
 export const rankingOptions = [

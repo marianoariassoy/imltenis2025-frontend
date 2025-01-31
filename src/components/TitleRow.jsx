@@ -20,7 +20,7 @@ const TitleRow = ({ num, image, title, link }) => {
         </div>
         <Link
           to={link}
-          className='hover:text-primary font-bold'
+          className='hover:text-primary font-semibold'
         >
           {title}
         </Link>

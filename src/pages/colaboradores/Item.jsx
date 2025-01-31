@@ -1,5 +1,4 @@
-import React from 'react'
-import { Instagram } from '../../components/icons'
+import { Instagram } from '../../lib/icons'
 
 const Item = ({ item }) => {
   return (

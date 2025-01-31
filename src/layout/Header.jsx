@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Bars, Logo, Instagram } from '../components/icons'
+import { Bars, Logo, Instagram } from '../lib/icons'
 
 const Header = () => {
   const openMenu = () => {

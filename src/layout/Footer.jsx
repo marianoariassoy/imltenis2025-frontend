@@ -1,4 +1,4 @@
-import { WhatsApp } from '../components/icons'
+import { WhatsApp } from '../lib/icons'
 
 const Footer = () => {
   const year = new Date().getFullYear()
@@ -47,7 +47,7 @@ const Footer = () => {
   ]
 
   return (
-    <div className='p-6'>
+    <div className='p-6 mt-6'>
       <div className='max-w-lg lg:max-w-3xl gap-2 m-auto grid grid-cols-4 lg:grid-cols-8 items-center justify-center mb-8 lg:mb-2 opacity-30'>
         {logos.map((logo, index) => (
           <div
@@ -74,8 +74,6 @@ const Footer = () => {
           <span className='font-bold'>Liga de clubes IML Tenis</span>
         </div>
         <div className='flex gap-x-1 items-center flex-wrap justify-center'>
-          <span>Buenos Aires, Argentina. &copy; {year}</span>
-          <span>-</span>
           <span>
             <a
               href='https://wa.me/5491130171475'
@@ -96,6 +94,8 @@ const Footer = () => {
               hola@imltenis.com.ar
             </a>
           </span>
+          <span>-</span>
+          <span>Hecho con ❤︎ en {year}</span>
         </div>
       </div>
     </div>

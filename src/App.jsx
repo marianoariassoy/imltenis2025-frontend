@@ -8,19 +8,17 @@ import Series from './pages/series'
 import OrdenDeJuego from './pages/torneos/OrdenDeJuego'
 import Clubes from './pages/clubes'
 import JugadoresProfile from './pages/jugadores/Perfil'
-
 import RankingJugadores from './pages/rankings/Jugadores'
 import RankingClubes from './pages/rankings/Clubes'
 import RankingCampeones from './pages/rankings/Campeones'
-
 import Jugadores from './pages/jugadores'
 import TorneosAnteriores from './pages/torneos-anteriores'
 import Colaboradores from './pages/colaboradores'
 import Reglamento from './pages/reglamento'
 import Nosotros from './pages/nosotros'
-
+import RegistrarUsuario from './pages/usuarios/RegistrarUsuario'
+import RestablecerPassword from './pages/usuarios/RestablecerPassword'
 import Presentacion from './pages/presentacion'
-// import Soon from './pages/soon'
 import PageNotFound from './pages/PageNotFound'
 
 // import Weekend from './pages/weekend'
@@ -45,7 +43,6 @@ const App = () => {
             path='/torneos/:id'
             element={<Tournaments />}
           />
-
           <Route
             path='/clubes/:id'
             element={<Clubes />}
@@ -66,7 +63,6 @@ const App = () => {
             path='/orden-de-juego'
             element={<OrdenDeJuego />}
           />
-
           <Route
             path='/ranking/jugadores'
             element={<RankingJugadores />}
@@ -79,12 +75,10 @@ const App = () => {
             path='/ranking/campeones'
             element={<RankingCampeones />}
           />
-
           <Route
             path='/torneos-anteriores'
             element={<TorneosAnteriores />}
           />
-
           <Route
             path='/jugadores'
             element={<Jugadores />}
@@ -104,6 +98,14 @@ const App = () => {
           <Route
             path='/presentacion'
             element={<Presentacion />}
+          />
+          <Route
+            path='/bienvenido'
+            element={<RegistrarUsuario />}
+          />
+          <Route
+            path='/usuarios/restablecer-password'
+            element={<RestablecerPassword />}
           />
 
           {/* <Route

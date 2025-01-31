@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Bull } from '../../components/icons'
+import { Bull } from '../../lib/icons'
 import FixtureFilter from './FixtureFilter'
 import TeamItem from '../../components/TeamItem'
 

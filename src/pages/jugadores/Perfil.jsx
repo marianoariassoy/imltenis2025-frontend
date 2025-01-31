@@ -31,9 +31,9 @@ const JugadoresContainer = () => {
 
   return (
     <section className='fade-in flex flex-col gap-y-6'>
-      <div className='items-center flex flex-col gap-y-3'>
+      <div className='items-center flex flex-col gap-y-1'>
         <div className='avatar'>
-          <div className='w-24 rounded-full'>
+          <div className='w-20 rounded-full'>
             <Image
               src={info.image}
               alt={info.name}
@@ -41,8 +41,8 @@ const JugadoresContainer = () => {
           </div>
         </div>
         <div className='text-center'>
-          <h1 className='font-bold text-primary'>{info.name}</h1>
-          <h2 className='opacity-70 text-sm'>{info.age}</h2>
+          <h1 className='font-semibold text-primary'>{info.name}</h1>
+          <h2 className='text-secondary text-sm'>{info.age}</h2>
           <span className='text-xl'>🧑</span>
         </div>
       </div>

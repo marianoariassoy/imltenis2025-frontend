@@ -14,7 +14,7 @@ module.exports = {
           'base-content': '#848484',
           primary: '#f34643',
           secondary: '#666',
-          'base-100': '#212121',
+          'base-100': '#202020',
           'base-300': '#252525'
         },
         light: {

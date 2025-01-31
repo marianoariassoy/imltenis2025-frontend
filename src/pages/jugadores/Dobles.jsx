@@ -30,10 +30,10 @@ const JugadoresDobles = ({ id }) => {
 
   return (
     <section className='fade-in flex flex-col gap-y-3'>
-      <h1 className='text-center text-primary font-bold'>Dobles disputados</h1>
+      <h1 className='text-center text-primary font-semibold'>Dobles disputados</h1>
 
       <div className='overflow-x-auto text-sm'>
-        <table className='table w-full'>
+        <table className='table w-full mb-3'>
           <thead>
             <tr>
               {labels.map((label, index) => (
@@ -49,24 +49,24 @@ const JugadoresDobles = ({ id }) => {
           <tbody>
             {data.map(item => (
               <tr key={item.id}>
-                <td className='pl-0 opacity-70 font-medium'>{item.date}</td>
+                <td className='pl-0 text-secondary font-medium'>{item.date}</td>
                 <td>
                   <Link
                     to={`/jugadores/${item.oponent1_id}`}
-                    className='link-hover text-primary font-bold'
+                    className='link-hover text-primary font-medium'
                   >
                     {item.oponent1_name}
                   </Link>
                   <span> y </span>
                   <Link
                     to={`/jugadores/${item.oponent2_id}`}
-                    className='link-hover text-primary font-bold'
+                    className='link-hover text-primary font-medium'
                   >
                     {item.oponent2_name}
                   </Link>{' '}
                   <Link
                     to={`/equipos/${item.team_oponent_id}`}
-                    className='hover:text-primary opacity-70'
+                    className='hover:underline text-secondary'
                   >
                     ({item.team_oponent_name})
                   </Link>
@@ -74,7 +74,7 @@ const JugadoresDobles = ({ id }) => {
                 <td>
                   <Link
                     to={`/jugadores/${item.partner_id}`}
-                    className='link-hover text-primary font-bold'
+                    className='link-hover text-primary font-medium'
                   >
                     {item.partner_name}
                   </Link>

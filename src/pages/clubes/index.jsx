@@ -10,9 +10,9 @@ const ClubesContainer = () => {
 
   return (
     <section className='fade-in flex flex-col gap-y-6'>
-      <div className='text-sm text-center flex flex-col gap-y-3 items-center'>
+      <div className='text-sm text-center flex flex-col gap-y-1 items-center'>
         <div className='avatar'>
-          <div className='w-24 rounded-full'>
+          <div className='w-20 rounded-full'>
             <img
               src={data[0].image}
               alt={data[0].name}
@@ -21,14 +21,14 @@ const ClubesContainer = () => {
             />
           </div>
         </div>
-        <h1 className='font-bold text-xl text-primary'>{data[0].name}</h1>
+        <h1 className='font-semibold text-base text-primary'>{data[0].name}</h1>
         <div>
           <p>{data[0].location}</p>
-          {data[0].phone && <p className='font-bold'>Tel. {data[0].phone}</p>}
+          {data[0].phone && <p className='font-medium'>Tel. {data[0].phone}</p>}
         </div>
         <div>
           {data[0].googlemaps && (
-            <p className='font-bold'>
+            <p className='font-medium'>
               <a
                 href={data[0].googlemaps}
                 target='_blank'
@@ -40,7 +40,7 @@ const ClubesContainer = () => {
             </p>
           )}
           {data[0].whatsapp && (
-            <p className='font-bold'>
+            <p className='font-medium'>
               <a
                 href={`https://wa.me/${data[0].whatsapp}`}
                 target='_blank'
@@ -52,7 +52,7 @@ const ClubesContainer = () => {
             </p>
           )}
           {data[0].instagram && (
-            <p className='font-bold'>
+            <p className='font-medium'>
               <a
                 href={data[0].instagram}
                 target='_blank'
@@ -64,7 +64,7 @@ const ClubesContainer = () => {
             </p>
           )}
           {data[0].facebook && (
-            <p className='font-bold'>
+            <p className='font-medium'>
               <a
                 href={data[0].facebook}
                 target='_blank'
@@ -76,7 +76,7 @@ const ClubesContainer = () => {
             </p>
           )}
           {data[0].web && (
-            <p className='font-bold'>
+            <p className='font-medium'>
               <a
                 href={data[0].web}
                 target='_blank'

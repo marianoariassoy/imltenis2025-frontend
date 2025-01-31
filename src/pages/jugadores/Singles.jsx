@@ -27,7 +27,7 @@ const JugadoresSingles = ({ id }) => {
 
   return (
     <section className='fade-in flex flex-col gap-y-3'>
-      <h1 className='text-center font-bold text-primary'>Singles disputados</h1>
+      <h1 className='text-center font-semibold text-primary'>Singles disputados</h1>
 
       <div className='overflow-x-auto text-sm'>
         <table className='table w-full'>
@@ -46,17 +46,17 @@ const JugadoresSingles = ({ id }) => {
           <tbody>
             {data.map(item => (
               <tr key={item.id}>
-                <td className='pl-0 opacity-70 font-medium'>{item.date}</td>
+                <td className='pl-0 text-secondary font-medium'>{item.date}</td>
                 <td>
                   <Link
                     to={`/jugadores/${item.oponent_id}`}
-                    className='link-hover text-primary inline-block font-bold'
+                    className='link-hover text-primary inline-block font-medium'
                   >
                     {item.oponent_name}
                   </Link>{' '}
                   <Link
                     to={`/equipos/${item.team_oponent_id}`}
-                    className='hover:text-primary opacity-70'
+                    className='hover:underline text-secondary'
                   >
                     ({item.team_oponent_name} )
                   </Link>

@@ -6,7 +6,7 @@ import TitleRow from '../../components/TitleRow'
 const TeamsPlayers = ({ id }) => {
   const { data, loading } = useFetch(`/teams/${id}/players`)
   if (loading) return <Loader />
-  if (data.length === 0) return null
+  if (!data) return null
 
   const labels = [
     {

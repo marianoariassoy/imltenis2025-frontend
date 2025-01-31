@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import useFetch from '../../hooks/useFetch'
 import Loader from '../../components/Loader'
-import { Pin, WhatsApp } from '../../components/icons'
+import { Pin, WhatsApp } from '../../lib/icons'
 import Image from '../../components/Image'
 import Players from './Players'
 import Fixture from './Fixture'
@@ -24,9 +24,9 @@ const Teams = () => {
 
   return (
     <section className='fade-in flex flex-col gap-y-6'>
-      <div className='flex flex-col gap-y-3 items-center'>
+      <div className='flex flex-col gap-y-1 items-center'>
         <div className='avatar'>
-          <div className='w-24 rounded-full'>
+          <div className='w-20 rounded-full'>
             <Link
               to={`/clubes/${data.club_id}`}
               className='hover:opacity-70 transition-all'
@@ -39,11 +39,11 @@ const Teams = () => {
           </div>
         </div>
         <div className='text-center'>
-          <h1 className='font-bold text-xl text-primary'>{data.name}</h1>
+          <h1 className='font-bold text-primary'>{data.name}</h1>
           <h2>
             <Link
               to={`/torneos/${data.tournament_id}`}
-              className='font-medium opacity-70 hover:underline text-sm'
+              className='font-medium hover:underline text-sm'
             >
               {data.tournament_name}
             </Link>
@@ -70,9 +70,9 @@ const Teams = () => {
         </div>
 
         <div className='text-center'>
-          <h1 className='text-primary font-bold'>Lista de buena fe</h1>
-          <h2 className='opacity-70 text-sm'>
-            Capitán: <span className='font-bold'>{data.captain_name}</span>
+          <h1 className='text-primary font-semibold'>Lista de buena fe</h1>
+          <h2 className='text-sm'>
+            Capitán: <span className='font-medium'>{data.captain_name}</span>
           </h2>
         </div>
       </div>
