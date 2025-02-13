@@ -42,7 +42,7 @@ const TournamentsGroup = ({ group }) => {
   return (
     <section className='flex flex-col mb-6'>
       <div className='overflow-x-auto text-sm mb-3'>
-        <table className='table w-full'>
+        <table className='table w-full mb-3'>
           <thead>
             <tr>
               {labels.map((item, index) => (

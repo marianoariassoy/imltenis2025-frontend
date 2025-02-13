@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet'
 import { NavLink } from 'react-router-dom'
 import Item from './Item'
-import Counter from '../Counter'
+import Counter from '../../components/Counter'
+import Whatsapp from '../../components/Whatsapp'
 
 const Presentacion = () => {
   const data = [
@@ -58,14 +59,14 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
       title: '💵 ¿Cuál es el valor y como abonar la inscripción por cada equipo?',
       text: `
       <strong>Hasta el 15 de Febrero $150.000.- </strong><br/>
-      <strong>Hasta el 15 de Marzo $180.000.- </strong><br/>
-      Las categorías Mixtas y Caballeros Segunda +35 tienen un descuento del 50% en la inscripción. 
-      <br/> <br/>
-      Alias: imltenis.2024<br/>
-      Emiliano Carro
-      <br/><br/>
-      Enviar comprobante al área administrativa +54 9 11 3017-1475 <br/>
-      Consulta descuentos por cantidad de equipos.`
+      <strong>Hasta el 15 de Marzo $180.000.- </strong><br/><br/>
+      Podes realizar una transferencia del valor de la inscripción a la siguiente cuenta: <br/>
+      Alias: imltenis.2025 <br/>
+      Nombre: Emiliano Carro <br/><br/>
+      Enviar comprobante al área administrativa +54 9 11 3017-1475 
+      <br/> 
+      Aprovechá el descuento en las nuevas categorías Mixtas y Caballeros Segunda +35. <br/>
+      Consultá descuentos por cantidad de equipos.`
     },
     {
       title: '💵 ¿Cuál es el valor a abonar cada partido?',
@@ -87,32 +88,32 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
       <div className='aspect-square lg:aspect-video'>
         <img
           className='w-full h-full object-cover'
-          src='https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjZub2JldzIxdHllajVodzlzd3gycjY0cDAxeTdnazFnamJndjgzayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kaYlcLV0XifKZFfwUm/giphy.gif'
+          src='https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenY4YnFuamszdGw0ODRhcmltNzVzZzV0cTRycGhmNXgxZ2J5amlxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osBL1qAQrcvoKGRbO/giphy.gif'
         />
       </div>
 
       <article className='text-sm flex flex-col gap-y-3'>
         <p>
-          Llega el <span className='text-primary font-bold'>Torneo Apertura 2025</span> y vas a poder formar parte de
+          Llega el <span className='text-primary font-medium'>Torneo Apertura 2025</span> y vas a poder formar parte de
           uno de los
-          <span className='text-primary'> interclubes más importantes</span> de la zona. Participá junto a tu grupo de
-          amigos representando a tu club o barrio, jugando en tus canchas y también conociendo otros lugares y jugadores
-          cada semana, siempre con
-          <span className='text-primary'> resultados y rankings actualizados</span> en nuestro sitio web.
+          <span className='text-primary font-medium'> interclubes más importantes</span> de la zona. Participá junto a
+          tu grupo de amigos representando a tu club o barrio, jugando en tus canchas y también conociendo otros lugares
+          y jugadores cada semana, siempre con
+          <span className='text-primary font-medium'> resultados y rankings actualizados</span> en nuestro sitio web.
         </p>
         <p>
           No te pierdas la oportunidad de poder ser elegido el
-          <span className='text-primary'> jugador destacado de la fecha</span> o recibir importantes premios al final de
-          la temporada liderando el <span className='text-primary'> ranking de jugadores</span> y también ayudar a tu
-          club a ganar la competencia anual de clubes en el
-          <span className='text-primary'> ranking de clubes.</span>
+          <span className='text-primary font-medium'> jugador destacado de la fecha</span> o recibir importantes premios
+          al final de la temporada liderando el <span className='text-primary font-medium'> ranking de jugadores</span>{' '}
+          y también ayudar a tu club a ganar la competencia anual de clubes en el
+          <span className='text-primary font-medium'> ranking de clubes.</span>
         </p>
         <p>
           Como si fuera poco, sobre todas las cosas, queremos mucho a nuestra comunidad tenistica y también tenemos
           momentos de entretenimiento, como
-          <span className='text-primary'> la batalla de los clubes</span>,
-          <span className='text-primary'> la elección de los mejores capitanes</span> y los nuevos
-          <span className='text-primary'> IML Awards.</span>
+          <span className='text-primary font-medium'> la batalla de los clubes</span>, la elección de los
+          <span className='text-primary font-medium'> mejores capitanes</span> y los nuevos
+          <span className='text-primary font-medium'> IML Awards.</span>
         </p>
         <p>
           Además de participar de las finales junto a todas las categorías en un evento de cierre con entrega de premios
@@ -159,6 +160,8 @@ Cierre de Inscripción: <strong>8 de Marzo.</strong>`
       <Helmet>
         <title>IML Tenis Presentación</title>
       </Helmet>
+
+      <Whatsapp />
     </section>
   )
 }

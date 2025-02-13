@@ -20,6 +20,7 @@ import RegistrarUsuario from './pages/usuarios/RegistrarUsuario'
 import RestablecerPassword from './pages/usuarios/RestablecerPassword'
 import Presentacion from './pages/presentacion'
 import PageNotFound from './pages/PageNotFound'
+import Soon from './pages/Soon'
 
 // import Weekend from './pages/weekend'
 // import WeekendTournament from './pages/weekend/Tournament'
@@ -106,6 +107,10 @@ const App = () => {
           <Route
             path='/usuarios/restablecer-password'
             element={<RestablecerPassword />}
+          />
+          <Route
+            path='/soon'
+            element={<Soon />}
           />
 
           {/* <Route

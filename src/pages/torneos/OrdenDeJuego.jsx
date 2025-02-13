@@ -2,15 +2,16 @@ import { Helmet } from 'react-helmet'
 import { useState } from 'react'
 import useFetch from '../../hooks/useFetch'
 import Loader from '../../components/Loader'
-import FixtureUpcoming from './FixtureUpcoming'
+import FixtureUpcoming from './OrdenDeJuegoLista'
 import Header from '../../components/Header'
+import Messages from '../../components/Messages'
 
 const OrdenDeJuego = () => {
   const { data, loading } = useFetch(`/series/upcoming`)
   const [filterText, setFilterText] = useState('')
 
   if (loading) return <Loader />
-  if (!data) return <div className='text-center text-sm text-primary mt-8'>No hay series por jugar 🥲</div>
+  if (!data) return <Messages text='No hay series por jugar 🥲' />
 
   const handleFilterChange = event => {
     setFilterText(event.target.value)
@@ -39,7 +40,7 @@ const OrdenDeJuego = () => {
       <FixtureUpcoming data={filteredData} />
 
       <Helmet>
-        <title>IML Tenis - Orden de juego</title>
+        <title>IML Tenis Orden de juego</title>
       </Helmet>
     </section>
   )

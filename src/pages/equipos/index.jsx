@@ -70,7 +70,7 @@ const Teams = () => {
         </div>
 
         <div className='text-center'>
-          <h1 className='text-primary font-semibold'>Lista de buena fe</h1>
+          <h1 className='text-primary font-semibold'>Lista de buena fe 🔥</h1>
           <h2 className='text-sm'>
             Capitán: <span className='font-medium'>{data.captain_name}</span>
           </h2>

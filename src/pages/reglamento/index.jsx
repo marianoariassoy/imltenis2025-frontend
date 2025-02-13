@@ -72,13 +72,11 @@ const Reglamento = () => {
     {
       title: 'Equivalencias de niveles en otros torneos',
       text: `Quinta Libre y Cuarta Damas: Jugadores categoría 125, C. 
-      Cuarta Libre, Tercera +45, 
-      Tercera Damas: Jugadores categoría 250 a 500, B2, B-. 
-      Tercera Libre, Segunda Damas: Jugadores categoría 500 a 750, B1 
-      Segunda Libre: Jugadores categoría 750 a 1000, A1, A2 
+      Cuarta Libre y Tercera Damas: Jugadores categoría 250 a 500, B2, B-.
+      Tercera Libre, Tercera +35 y Segunda Damas: Jugadores categoría 500 a 750, B1 
+      Segunda Libre, Segunda +35: Jugadores categoría 750 a 1000, A1, A2 
       Primera Libre: Jugadores categoría 1000, Super A.
-      
-      Aquellos jugadores/as que participaron durante el torneo apertura 2024 en categoría primera o intermedia en cualquier otra liga, deben obligadamente jugar en Segunda Damas, Segunda Caballeros +35, o Segunda Libre.`
+      `
     },
     {
       title: 'Resultados y Formación',
@@ -193,7 +191,7 @@ const Reglamento = () => {
     },
     {
       title: 'Playoffs',
-      text: `En estas estapas solo podrán participar los jugadores que hayan disputado al menos una serie en instancias previas en la categoría corresponiente en el actual torneo, a excepción de la categoría Primera Libre, donde esta regla no se aplicará.`
+      text: `En estas estapas solo podrán participar los jugadores que hayan disputado al menos una serie en instancias previas en la categoría corresponiente en el actual torneo.`
     },
     {
       title: 'Penalizaciones',

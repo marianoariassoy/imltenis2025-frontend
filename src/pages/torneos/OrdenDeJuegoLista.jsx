@@ -5,10 +5,7 @@ const Fixture = ({ data }) => {
   return (
     <section className='fade-in'>
       <div className='overflow-x-auto text-sm'>
-        <table
-          className='table w-full'
-          summary='Fixture'
-        >
+        <table className='table w-full mb-3'>
           <thead>
             <tr>
               <th scope='col'>Fecha</th>

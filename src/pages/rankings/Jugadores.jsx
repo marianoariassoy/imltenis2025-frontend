@@ -7,6 +7,7 @@ import { rankingOptions } from '../../lib/data'
 import Labels from '../../components/Labels'
 import TitleRow from '../../components/TitleRow'
 import Header from '../../components/Header'
+import Messages from '../../components/Messages'
 
 const JugadoresRanking = () => {
   const { data, loading } = useFetch(`/players/ranking/4`)
@@ -66,11 +67,11 @@ const JugadoresRanking = () => {
       </div>
 
       {filteredPlayers.length === 0 ? (
-        <p className='text-center text-sm text-primary'>No hay jugadores para mostrar</p>
+        <Messages text='No hay jugadores para mostrar 🥲' />
       ) : (
         <>
           <div className='overflow-x-auto text-sm'>
-            <table className='table w-full'>
+            <table className='table w-full mb-3'>
               <thead>
                 <tr>
                   {labels.map((item, index) => (

@@ -5,7 +5,7 @@ const TeamItem = ({ id, name, image }) => {
   return (
     <div className='flex items-center gap-x-3'>
       <div className='avatar'>
-        <div className='w-9 rounded-full'>
+        <div className='w-9 rounded-full shadow'>
           <Link
             to={`/equipos/${id}`}
             className='hover:opacity-70'

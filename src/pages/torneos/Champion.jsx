@@ -9,7 +9,7 @@ const TornamentsChampion = ({ id, name, image }) => {
   }, [id])
 
   return (
-    <div className='avatar flex flex-col gap-y-2 items-center mb-6 text-center'>
+    <div className='avatar flex flex-col gap-y-2 items-center text-center mb-2'>
       <div className='w-24 rounded-full'>
         <Link
           to={`/equipos/${id}`}
@@ -21,7 +21,7 @@ const TornamentsChampion = ({ id, name, image }) => {
           />
         </Link>
       </div>
-      <h1 className='font-bold text-primary text-sm lg:text-base'>{name} ⭐</h1>
+      <h1 className='font-semibold text-primary text-sm lg:text-base'>{name} ⭐</h1>
     </div>
   )
 }

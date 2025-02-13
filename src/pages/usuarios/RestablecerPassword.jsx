@@ -6,7 +6,7 @@ import { BeatLoader } from 'react-spinners'
 import { Input, Button } from '../../ui'
 import { texts } from '../../lib/data'
 import Error from './Error'
-import Messages from './Messages'
+import Messages from '../../components/Messages'
 
 const index = () => {
   const location = useLocation()

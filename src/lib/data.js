@@ -1,15 +1,19 @@
 export const categories = [
-  { name: 'Damas Segunda', url: '/soon' },
-  { name: 'Damas Tercera ', url: '/soon' },
-  { name: 'Damas Cuarta ', url: '/soon' },
   { name: 'Primera Libre', url: '/soon' },
   { name: 'Segunda Libre', url: '/soon' },
+  { name: 'Segunda +35', url: '/soon' },
+  { name: 'Damas Segunda', url: '/soon' },
+
   { name: 'Tercera Libre', url: '/soon' },
+  { name: 'Tercera +35', url: '/soon' },
+  { name: 'Damas Tercera ', url: '/soon' },
+
   { name: 'Cuarta Libre', url: '/soon' },
+  { name: 'Damas Cuarta ', url: '/soon' },
+
   { name: 'Quinta Libre', url: '/soon' },
   { name: 'Sexta Libre', url: '/soon' },
-  { name: 'Segunda +35', url: '/soon' },
-  { name: 'Tercera +35', url: '/soon' },
+
   { name: 'Sub 14 Juniors', url: '/soon' }
 ]
 
@@ -23,7 +27,8 @@ export const menu = [
   { name: 'Reglamento', url: '/reglamento' },
   { name: 'Colaboradores', url: '/colaboradores' },
   // { name: 'IML Weekend', url: '/weekend' },
-  { name: 'Nosotros', url: '/nosotros' }
+  { name: 'Nosotros', url: '/nosotros' },
+  { name: 'Registrate', url: '/bienvenido' }
 ]
 
 export const rankingOptions = [

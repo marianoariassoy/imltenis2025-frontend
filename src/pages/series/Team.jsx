@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const TeamItem = ({ id, name, image, type }) => {
   return (
-    <div className='flex flex-col gap-y-3 items-center w-2/5'>
+    <div className='flex flex-col gap-y-3 items-center'>
       <div className='avatar'>
         <div className='w-20 rounded-full'>
           <Link
@@ -18,14 +18,14 @@ const TeamItem = ({ id, name, image, type }) => {
           </Link>
         </div>
       </div>
-      <div className='px-3'>
+      <div className='px-3 flex flex-col text-sm'>
         <Link
           to={`/equipos/${id}`}
-          className='link-hover text-primary font-bold block'
+          className='hover:underline text-primary font-semibold'
         >
           {name}
         </Link>
-        <span className='opacity-70'>{type}</span>
+        <span className='text-secondary'>{type}</span>
       </div>
     </div>
   )

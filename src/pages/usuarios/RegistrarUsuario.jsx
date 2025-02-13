@@ -7,7 +7,7 @@ import { Input, Button, Select } from '../../ui'
 import { texts, days, months, years } from '../../lib/data'
 import Gracias from './Gracias'
 import Error from './Error'
-import Messages from './Messages'
+import Messages from '../../components/Messages'
 import Header from '../../components/Header'
 
 const RegistrarUsuario = () => {
@@ -63,7 +63,7 @@ const RegistrarUsuario = () => {
         {!sended && (
           <Header
             title='¡Bienvenido! 👋'
-            description='Completá con tus datos y se parte de nuestra liga.'
+            description='Completá el formulario con tus datos y se parte de nuestra liga.'
           />
         )}
         <div className='w-full m-auto'>
@@ -146,7 +146,7 @@ const RegistrarUsuario = () => {
                 <Input
                   type='password'
                   title='Contraseña'
-                  placeholder='contraseña'
+                  placeholder='Contraseña'
                   register={register('password', {
                     required: texts.required,
                     validate: value => value.length > 4 || 'La longitud debe ser mayor a 4 caracteres'
@@ -157,8 +157,8 @@ const RegistrarUsuario = () => {
               <div className='form-control'>
                 <Input
                   type='password'
-                  title='Repetir contraseña'
-                  placeholder='contraseña'
+                  title='Confirmar contraseña'
+                  placeholder='Contraseña'
                   register={register('confirmPassword', {
                     required: texts.required,
                     validate: value => value === password || 'Las contraseñas no coinciden'
@@ -194,14 +194,14 @@ const RegistrarUsuario = () => {
               </div>
               <div className='form-control'>
                 <label className='label'>
-                  <span className='label-text text-primary font-medium'>Foto de perfil</span>
+                  <span className='label-text text-primary font-medium'>Foto de perfil (sugerido)</span>
                 </label>
                 <input
                   type='file'
                   accept='image/*'
                   name='file'
                   register={register('file')}
-                  className='pl-3 file-input file-input-bordered file-input-primary w-full text-sm'
+                  className='file:mr-4 file:rounded-full file:border-0 file:bg-primary file:px-4 file:py-3 file:h-12 file:text-sm file:font-semibold hover:file:bg-secondary file:cursor-pointer'
                   onChange={getFile}
                 />
                 {image && (

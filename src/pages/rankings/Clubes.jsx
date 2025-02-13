@@ -29,14 +29,14 @@ const ClubesRanking = () => {
   ]
 
   return (
-    <section className='fade-in flex flex-col gap-y-3'>
+    <section className='fade-in flex flex-col gap-y-3  m-auto'>
       <Header
         title='Ranking de Clubes 2024'
         emoji='🥇'
       />
 
       <div className='overflow-x-auto text-sm'>
-        <table className='table w-full'>
+        <table className='table w-full mb-3'>
           <thead>
             <tr>
               {labels.map((item, index) => (

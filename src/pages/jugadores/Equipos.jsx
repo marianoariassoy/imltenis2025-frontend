@@ -10,10 +10,10 @@ const JugadoresEquipos = ({ id }) => {
 
   return (
     <section className='fade-in flex flex-col gap-y-3'>
-      <h1 className='text-center font-semibold text-primary'>Equipos integrados</h1>
+      <h1 className='text-center text-sm font-semibold text-primary'>Equipos</h1>
 
       <div className='overflow-x-auto text-sm'>
-        <table className='table w-full'>
+        <table className='table w-full mb-3'>
           <thead>
             <tr>
               <th className='pl-0'>Nombre</th>

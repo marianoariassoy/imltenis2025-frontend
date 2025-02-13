@@ -11,7 +11,6 @@ const Header = () => {
 
   useEffect(() => {
     const logo = document.querySelector('.logo-main')
-
     window.onscroll = () => {
       if (window.scrollY > 0) {
         logo.classList.add('text-xs')
@@ -22,7 +21,7 @@ const Header = () => {
   }, [])
 
   return (
-    <div className='navbar w-full px-4 bg-base-100'>
+    <div className='navbar w-full px-4 bg-base-100/90 backdrop-blur'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label

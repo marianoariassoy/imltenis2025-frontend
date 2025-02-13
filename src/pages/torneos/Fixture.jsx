@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Bull } from '../../lib/icons'
 import FixtureFilter from './FixtureFilter'
 import TeamItem from '../../components/TeamItem'
+import Messages from '../../components/Messages'
 
 const Fixture = ({ data, type }) => {
   const [filters, setFilters] = useState('all')
@@ -21,10 +22,7 @@ const Fixture = ({ data, type }) => {
       )}
 
       <div className='overflow-x-auto text-sm'>
-        <table
-          className='table w-full'
-          summary='Fixture'
-        >
+        <table className='table w-full mb-3'>
           {filteredData.length > 0 && (
             <thead>
               <tr>
@@ -117,9 +115,7 @@ const Fixture = ({ data, type }) => {
             ))}
           </tbody>
         </table>
-        {filters !== null && filteredData.length === 0 && (
-          <div className='text-center text-primary mb-3 font-bold'>No hay series 🥲</div>
-        )}
+        {filters !== null && filteredData.length === 0 && <Messages text='No hay series 🥲' />}
       </div>
     </section>
   )
