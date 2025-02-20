@@ -44,7 +44,7 @@ const Reglamento = () => {
     },
     {
       title: 'Formación Incompleta',
-      text: `Si el equipo completo o algún jugador no se presentara a jugar la fecha correspondiente (WO) deberá avisar con un mínimo de 48 hs. al capitán rival por escrito al chat de capitanes de WhatsApp, de lo contrario deberá correr con los gastos que correspondan al equipo local, como ser alquiler de canchas. 
+      text: `Si el equipo completo o algún jugador no se presentara a jugar la fecha correspondiente (WO) deberá avisar con un mínimo de 24 hs. al capitán rival por escrito al chat de capitanes de WhatsApp, de lo contrario deberá correr con los gastos que correspondan al equipo local, como ser alquiler de canchas. 
       Se podrá presentar WO tanto de single y/o de doble 2, pudiéndose disputar el resto de el o los parciales.`
     },
     {
@@ -80,10 +80,7 @@ const Reglamento = () => {
     },
     {
       title: 'Resultados y Formación',
-      text: `Es obligatorio el envío de la planilla de
-      resultados o los resultados y formaciones al chat de capitanes de WhatsApp por parte del capitan del equipo
-      ganador en el transcurso de las 48 hs. del horario en que se haya disputado la serie, de lo contrario se
-      procedera a anular la serie.`
+      text: `Es obligatoria la carga del resultado de la serie disputada en nuestro sistema web capitanes.imltenis.com.ar por parte del capitan ganador de esta, luego de realizado esto se debe enviar el link provisto por el sistema al grupo de WhatsApp de capitanes indicando a la serie que corresponda, con un plazo hasta el día lunes 17 hs. de cada semana, de lo contrario se procedera a anular la serie.`
     },
     {
       title: 'Instalaciones necesarias',
@@ -179,7 +176,7 @@ const Reglamento = () => {
     },
     {
       title: 'Descenso de equipos',
-      text: `Los equipos que hayan terminado en ultimo lugar en sus respectivos grupos tendrán derecho de descender a una categoría inmediatamente inferior con todos sus jugadores, con excepción de los jugadores  que hayan finalizado el torneo con una diferencia de partidos ganados +5 o superior.`
+      text: `Los equipos que hayan terminado en ultimo lugar en sus respectivos grupos tendrán derecho de descender a una categoría inmediatamente inferior con todos sus jugadores, con excepción de los jugadores  que hayan finalizado el torneo con una diferencia de partidos ganados +3 o superior.`
     },
     {
       title: 'Descenso de jugadores',
