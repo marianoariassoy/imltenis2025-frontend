@@ -22,8 +22,8 @@ import Presentacion from './pages/presentacion'
 import PageNotFound from './pages/PageNotFound'
 import Soon from './pages/Soon'
 
-// import Weekend from './pages/weekend'
-// import WeekendTournament from './pages/weekend/Tournament'
+import Weekend from './pages/weekend'
+import WeekendTournament from './pages/weekend/Tournament'
 
 const App = () => {
   ReactGA.initialize('G-G1DBH0K86R')
@@ -113,14 +113,14 @@ const App = () => {
             element={<Soon />}
           />
 
-          {/* <Route
+          <Route
             path='/weekend'
             element={<Weekend />}
           />
           <Route
             path='/weekend/torneos/:id'
             element={<WeekendTournament />}
-          /> */}
+          />
 
           <Route
             path='*'

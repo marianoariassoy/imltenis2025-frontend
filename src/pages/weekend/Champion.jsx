@@ -11,12 +11,10 @@ const Champion = ({ id }) => {
 
   return (
     <div className='flex flex-col items-center gap-y-3'>
-      <span className='flex gap-x-1 mb-3'>
-        <h1 className='italic text-primary'>Campeones </h1> <span className='text-xl'>🏆</span>
-      </span>
+      <h1 className='italic text-primary mb-1'>Campeones </h1>
       <div className='flex gap-4'>
         <div className='avatar'>
-          <div className='w-20 h-20 rounded-full overflow-hidden'>
+          <div className='w-16 h-16 rounded-full overflow-hidden'>
             <Image
               src={data.player1_image}
               alt={data.player1_name}
@@ -25,7 +23,7 @@ const Champion = ({ id }) => {
         </div>
 
         <div className='avatar'>
-          <div className='w-20 h-20 rounded-full overflow-hidden'>
+          <div className='w-16 h-16 rounded-full overflow-hidden'>
             <Image
               src={data.player2_image}
               alt={data.player2_name}
@@ -36,14 +34,14 @@ const Champion = ({ id }) => {
       <div className='flex gap-1 items-center font-medium text-sm'>
         <Link
           to={`/jugadores/${data.player1_id}`}
-          className='opacity-70 hover:text-primary hover:opacity-100'
+          className='hover:text-primary hover:opacity-100'
         >
           {data.player1_name}
         </Link>{' '}
         /
         <Link
           to={`/jugadores/${data.player2_id}`}
-          className='opacity-70 hover:text-primary hover:opacity-100'
+          className='hover:text-primary hover:opacity-100'
         >
           {data.player2_name}
         </Link>

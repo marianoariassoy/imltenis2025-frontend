@@ -61,13 +61,12 @@ const Reglamento = () => {
     },
     {
       title: 'Lista de buena fe',
-      text: `Deben ser enviadas por el capitán de cada equipo a la organización antes de la fecha informada de su cierre. Pasada dicha fecha, no se podrá realizar incorporación cambio alguno.
-      El mejor jugador del equipo deberá ir primero en la lista, siguiendo este criterio para el resto de la lista, siendo el último jugador el de más bajo nivel.
-      Es responsabilidad de los capitanes chequear que estén todos sus jugadores y colocados en la posición que consideren correcta antes del comienzo del torneo.  En la categoría con límite de edad, tercera +45, se considerará que el jugador está dentro de la categoría, al cumplir años dentro del año calendario de inicio del torneo.`
+      text: `El mejor jugador del equipo deberá ir primero en la lista, siguiendo este criterio para el resto de la lista, siendo el último jugador el de más bajo nivel.
+      Es responsabilidad de los capitanes chequear que estén todos sus jugadores y colocados en la posición que consideren correcta antes del comienzo del torneo. En las categorías con límite de edad, tercera y segunda +35, se considerará que el jugador está dentro de la categoría, al cumplir años dentro del año calendario de inicio del torneo.`
     },
     {
       title: 'Cantidad de jugadores por equipo',
-      text: `El límite de integrantes de la lista de buena fe es de 18 jugadores.`
+      text: `El límite de integrantes de la lista de buena fe es de 20 jugadores.`
     },
     {
       title: 'Equivalencias de niveles en otros torneos',
@@ -80,7 +79,11 @@ const Reglamento = () => {
     },
     {
       title: 'Resultados y Formación',
-      text: `Es obligatoria la carga del resultado de la serie disputada en nuestro sistema web capitanes.imltenis.com.ar por parte del capitan ganador de esta, luego de realizado esto se debe enviar el link provisto por el sistema al grupo de WhatsApp de capitanes indicando a la serie que corresponda, con un plazo hasta el día lunes 17 hs. de cada semana, de lo contrario se procedera a anular la serie.`
+      text: `El capitán del equipo ganador debe cargar el resultado de la serie en el Sistema Web para Capitanes (capitanes.imltenis.com.ar) antes del martes a las 12:00 hs. de cada semana. Una vez realizada la carga, deberá compartir el enlace generado por el sistema en el grupo de WhatsApp de capitanes, indicando la serie correspondiente.  
+
+Además, será obligatorio conservar la planilla en papel firmada por ambos capitanes, ya que en caso de cualquier reclamo, esta será el único documento válido para verificar la información.  
+
+El incumplimiento de la carga por parte del capitán del equipo ganador de la serie resultará en la anulación de los puntos obtenidos por su equipo, mientras que el equipo rival mantendrá los puntos ganados en cancha. No habrá posibilidad de reclamo una vez aplicada la sanción.`
     },
     {
       title: 'Instalaciones necesarias',
@@ -138,7 +141,7 @@ const Reglamento = () => {
       text: `La presente es una liga que reúne a la mayoría de clubes deportivos cuyos ingresos provienen del
       cobro por el uso de dichos espacios. Cada jugador debe abonar cuando le toca jugar ya sea de local o de
       visitante una suma fijada por la organización. Ese dinero se abona en el club donde se desarrolla la serie.
-      Aquel equipo que presente formación incompleta sin haber avisado con el mínimo de 48hs en el chat de capitanes, deberá abonar igualmente el costo completo en concepto de alquiler de cancha. Aquellos emprendimientos urbanísticos que no acostumbran a cobrar el alquiler por el uso de las canchas en razón que los propietarios la sostienen mediante el pago de las expensas, tienen el mismo derecho a cobrarlas y utilizar el dinero recaudado en las localias para afrontar el costo de su participación cuando jueguen de visitantes. Queda igualmente a criterio de los mismos el cobro a los equipos visitantes. La única manera de evitar el pago del alquiler de las canchas es avisando 48hs antes de la ausencia, en cuyo caso el club que será local tiene el tiempo suficiente de disponer de la misma para alquilarla a terceros.
+      Aquel equipo que presente formación incompleta sin haber avisado con el mínimo de 24hs. en el chat de capitanes, deberá abonar igualmente el costo completo en concepto de alquiler de cancha. Aquellos emprendimientos urbanísticos que no acostumbran a cobrar el alquiler por el uso de las canchas en razón que los propietarios la sostienen mediante el pago de las expensas, tienen el mismo derecho a cobrarlas y utilizar el dinero recaudado en las localias para afrontar el costo de su participación cuando jueguen de visitantes. Queda igualmente a criterio de los mismos el cobro a los equipos visitantes. La única manera de evitar el pago del alquiler de las canchas es avisando 48hs antes de la ausencia, en cuyo caso el club que será local tiene el tiempo suficiente de disponer de la misma para alquilarla a terceros.
       El costo fijado en concepto de alquiler de cancha será actualizado periódicamente por esta organización con el fin de mantenerlo acorde a la necesidad de los clubes.`
     },
     {
@@ -229,7 +232,7 @@ const Reglamento = () => {
         emoji='📝'
       />
 
-      <span className='block opacity-70 text-sm text-center'>Ultima actualización 4 de Noviembre 2024.</span>
+      <span className='block opacity-70 text-sm text-center'>Ultima actualización 20 de Febrero 2025.</span>
 
       <div>
         <Buscar

@@ -1,20 +1,20 @@
 export const categories = [
   { name: 'Primera Libre', url: '/soon' },
   { name: 'Segunda Libre', url: '/soon' },
-  { name: 'Segunda +35', url: '/soon' },
+  { name: 'Caballeros Segunda +35', url: '/soon' },
   { name: 'Damas Segunda', url: '/soon' },
+  { name: 'Mixto Segunda ', url: '/soon' },
 
   { name: 'Tercera Libre', url: '/soon' },
-  { name: 'Tercera +35', url: '/soon' },
+  { name: 'Caballeros Tercera +35', url: '/soon' },
   { name: 'Damas Tercera ', url: '/soon' },
+  { name: 'Mixto Tercera ', url: '/soon' },
 
   { name: 'Cuarta Libre', url: '/soon' },
   { name: 'Damas Cuarta ', url: '/soon' },
 
   { name: 'Quinta Libre', url: '/soon' },
-  { name: 'Sexta Libre', url: '/soon' },
-
-  { name: 'Sub 14 Juniors', url: '/soon' }
+  { name: 'Sexta Libre', url: '/soon' }
 ]
 
 export const menu = [
@@ -23,12 +23,12 @@ export const menu = [
   { name: 'Ranking de Clubes', url: '/ranking/clubes' },
   { name: 'Ranking de Campeones', url: '/ranking/campeones' },
   { name: 'Orden de juego', url: '/orden-de-juego' },
-  { name: 'Jugadores', url: '/jugadores' },
   { name: 'Reglamento', url: '/reglamento' },
+  { name: 'Jugadores', url: '/jugadores' },
+  { name: 'Registro de jguadores', url: '/bienvenido' },
   { name: 'Colaboradores', url: '/colaboradores' },
-  // { name: 'IML Weekend', url: '/weekend' },
-  { name: 'Nosotros', url: '/nosotros' },
-  { name: 'Registrate', url: '/bienvenido' }
+  { name: 'IML Weekend', url: '/weekend' },
+  { name: 'Nosotros', url: '/nosotros' }
 ]
 
 export const rankingOptions = [

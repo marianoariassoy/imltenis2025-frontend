@@ -12,7 +12,7 @@ const Fixture = ({ group_id, type }) => {
     <section className='fade-in mb-4'>
       {type !== 2 && <h1 className='italic text-primary text-center mb-6'>Orden de juego</h1>}
 
-      <div className='w-full overflow-x-auto mt-3 flex flex-col  gap-y-3'>
+      <div className='w-full overflow-x-auto mt-3 flex flex-col mb-3 gap-y-3'>
         {data.map(item => (
           <div
             key={item.id}

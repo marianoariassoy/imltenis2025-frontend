@@ -10,7 +10,10 @@ const Torneos = () => {
 
   return (
     <section className='fade-in flex flex-col gap-y-6'>
-      <Header title='IML Weekend' />
+      <Header
+        title='IML Weekend'
+        emoji='🏆'
+      />
 
       <div className='flex flex-col gap-y-3 items-center'>
         {data.map(item => (
