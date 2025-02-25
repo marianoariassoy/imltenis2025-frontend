@@ -3,7 +3,7 @@ import Loader from '../../components/Loader'
 import GroupsStage from './GroupsStage'
 import Playoffs from './Playoffs'
 
-const Tournaments = ({ id }) => {
+const Tournaments = ({ id, mode }) => {
   const { data, loading } = useFetch(`/tournaments/groups/${id}`)
   if (loading) return <Loader />
   if (!data) return null
@@ -19,13 +19,19 @@ const Tournaments = ({ id }) => {
       {stage2.length > 0 && (
         <>
           <section className='mb-6'>
-            <GroupsStage groups={stage2} />
+            <GroupsStage
+              groups={stage2}
+              mode={mode}
+            />
           </section>
           <h2 className='text-primary text-xl mb-3 text-center font-extrabold'>Primera Fase</h2>
         </>
       )}
 
-      <GroupsStage groups={groups} />
+      <GroupsStage
+        groups={groups}
+        mode={mode}
+      />
     </>
   )
 }

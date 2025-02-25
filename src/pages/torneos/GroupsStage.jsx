@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import TournamentsItem from './TournamentsItem'
 
-const GroupsStage1 = ({ groups }) => {
+const GroupsStage1 = ({ groups, mode }) => {
   const [group, setGroup] = useState(0)
 
   const arrayReverse = groups.filter(objeto => objeto).reverse()
@@ -36,7 +36,10 @@ const GroupsStage1 = ({ groups }) => {
           key={index}
           className={index === group ? 'block' : 'hidden'}
         >
-          <TournamentsItem data={item} />
+          <TournamentsItem
+            data={item}
+            mode={mode}
+          />
         </div>
       ))}
     </section>

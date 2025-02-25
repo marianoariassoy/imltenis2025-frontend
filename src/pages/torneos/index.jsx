@@ -16,13 +16,6 @@ const TournamentsContainer = () => {
       top: 0,
       behavior: 'smooth'
     })
-
-    if (+id === 45) {
-      document.documentElement.setAttribute('data-theme', 'light')
-    }
-    return () => {
-      document.documentElement.setAttribute('data-theme', 'dark')
-    }
   }, [])
 
   if (loading) return <Loader />
@@ -32,6 +25,7 @@ const TournamentsContainer = () => {
     id: data[0].id,
     tournament: data[0].name,
     season: data[0].season,
+    mode: data[0].mode,
     title: data[0].name + ' ' + data[0].season,
     champion: data[0].team_champion,
     champion_id: data[0].team_champion_id,
@@ -54,7 +48,10 @@ const TournamentsContainer = () => {
         />
       )}
 
-      <GroupsContainer id={id} />
+      <GroupsContainer
+        id={id}
+        mode={info.mode}
+      />
 
       <Helmet>
         <title>IML Tenis {info.title}</title>

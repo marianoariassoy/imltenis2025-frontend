@@ -16,13 +16,6 @@ module.exports = {
           secondary: '#666',
           'base-100': '#252525',
           'base-300': '#252525'
-        },
-        light: {
-          'base-content': '#FFF',
-          primary: '#FFF',
-          secondary: '#666',
-          'base-100': '#0d7350',
-          'base-300': '#0d7350'
         }
       }
     ]

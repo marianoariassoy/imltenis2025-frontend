@@ -4,40 +4,68 @@ import Labels from '../../components/Labels'
 import TitleRow from '../../components/TitleRow'
 import { Bull } from '../../lib/icons'
 
-const TournamentsGroup = ({ group }) => {
+const TournamentsGroup = ({ group, mode }) => {
   const { data, loading } = useFetch(`/${group.type == 3 ? 'groups-stage2' : 'groups'}/teams/${group.id}`)
   if (loading) return <Loader />
 
-  const labels = [
-    {
-      name: 'Equipo',
-      value: ''
-    },
-    {
-      name: 'Pts.',
-      value: 'Puntos (parciales)'
-    },
-    {
-      name: 'SG',
-      value: 'Series ganadas'
-    },
-    {
-      name: 'DS',
-      value: 'Diferencia de sets'
-    },
-    {
-      name: 'DG',
-      value: 'Diferencia de games'
-    },
-    {
-      name: 'SJ',
-      value: 'Series jugadas'
-    },
-    {
-      name: 'Ult. 5 series',
-      value: ''
-    }
-  ]
+  const labels =
+    mode == 3
+      ? [
+          {
+            name: 'Equipo',
+            value: ''
+          },
+          {
+            name: 'Pts.',
+            value: 'Puntos (parciales)'
+          },
+          {
+            name: 'DS',
+            value: 'Diferencia de sets'
+          },
+          {
+            name: 'DG',
+            value: 'Diferencia de games'
+          },
+          {
+            name: 'SJ',
+            value: 'Series jugadas'
+          },
+          {
+            name: 'Ult. 5 series',
+            value: ''
+          }
+        ]
+      : [
+          {
+            name: 'Equipo',
+            value: ''
+          },
+          {
+            name: 'Pts.',
+            value: 'Puntos (parciales)'
+          },
+          {
+            name: 'SG',
+            value: 'Series ganadas'
+          },
+          {
+            name: 'DS',
+            value: 'Diferencia de sets'
+          },
+          {
+            name: 'DG',
+            value: 'Diferencia de games'
+          },
+          {
+            name: 'SJ',
+            value: 'Series jugadas'
+          },
+          {
+            name: 'Ult. 5 series',
+            value: ''
+          }
+        ]
 
   return (
     <section className='flex flex-col mb-6'>
@@ -65,7 +93,9 @@ const TournamentsGroup = ({ group }) => {
                 <td>
                   <span className='font-bold'>{item.match_won}</span>
                 </td>
-                <td>{item.series_won}</td>
+
+                {+mode !== 3 && <td>{item.series_won}</td>}
+
                 <td>{item.sets}</td>
                 <td>{item.games}</td>
                 <td>{item.series_total}</td>
